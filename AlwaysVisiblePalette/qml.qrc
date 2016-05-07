@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>ColorButtonMy.qml</file>
+        <file>ExitButtonMy.qml</file>
+        <file>MinimizeButtonMy.qml</file>
     </qresource>
 </RCC>
