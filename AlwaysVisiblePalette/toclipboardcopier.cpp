@@ -1,17 +1,17 @@
 #include "toclipboardcopier.h"
 #include <QClipboard>
 #include <QObject>
+#include <QApplication>
 #include <QQmlEngine>
 
 ToClipBoardCopier::ToClipBoardCopier()
 {
 
 }
-void Clopier ()
+void ccopier (QString DataColor)
 {
-    QString text = "";
-    QClipboard clipboard;
-        clipboard.clear();
-        clipboard.insert("text/plain", text);
+ QClipboard *clipboard = QApplication::clipboard();
+ clipboard->clear();
+ clipboard->setText(DataColor);
 }
 

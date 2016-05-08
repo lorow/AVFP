@@ -1,12 +1,15 @@
 #ifndef TOCLIPBOARDCOPIER_H
 #define TOCLIPBOARDCOPIER_H
 #include <QObject>
+#include <QString>
 
 
-class ToClipBoardCopier
+class ToClipBoardCopier : public QObject
 {
-public:
+    Q_OBJECT
 
+    public:
+     void ccopier (QString DataColor);
     ToClipBoardCopier();
 };
 
