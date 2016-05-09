@@ -1,14 +1,12 @@
-#include "toclipboardcopier.h"
 #include <QClipboard>
-#include <QObject>
 #include <QApplication>
-#include <QQmlEngine>
-
-ToClipBoardCopier::ToClipBoardCopier()
+#include "clipboardhandlermy.h"
+#include <QObject>
+clipboardHandlerMy::clipboardHandlerMy()
 {
 
 }
-void cCopier (QString DataColor)
+void textclipboard (QString DataColor)
 {
  QClipboard *clipboard = QApplication::clipboard();
  clipboard->clear();

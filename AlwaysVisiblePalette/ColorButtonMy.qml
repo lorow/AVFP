@@ -13,6 +13,11 @@ Rectangle {
 
     MouseArea {
         anchors.fill: parent
-        onClicked: console.log("Button clicked!")
+        onClicked:
+        {
+
+            console.log("Button clicked!")
+           clipboardHandlerMy.textclipboard("test")
+        }
     }
 }

@@ -9,7 +9,8 @@ class ToClipBoardCopier : public QObject
     Q_OBJECT
 
     public:
-     void ccopier (QString DataColor);
+
+     Q_INVOKABLE void cCopier (QString DataColor);
     ToClipBoardCopier();
 };
 

@@ -5,7 +5,7 @@ QT += qml quick widgets
 CONFIG += c++11
 
 SOURCES += main.cpp \
-    toclipboardcopier.cpp
+    clipboardhandlermy.cpp
 
 RESOURCES += qml.qrc
 
@@ -16,4 +16,4 @@ QML_IMPORT_PATH =
 include(deployment.pri)
 
 HEADERS += \
-    toclipboardcopier.h
+    clipboardhandlermy.h
