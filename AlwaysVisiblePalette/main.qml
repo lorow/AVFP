@@ -15,37 +15,37 @@ ApplicationWindow {
     //setting position of main window
     y: Screen.desktopAvailableHeight - height
     x: Screen.desktopAvailableWidth - width
-   // makes window always stay on top
-   flags: Qt.FramelessWindowHint | Qt.WindowMinimizeButtonHint | Qt.Window | Qt.WindowStaysOnTopHint
+    // makes window always stay on top
+    flags: Qt.FramelessWindowHint | Qt.WindowMinimizeButtonHint | Qt.Window | Qt.WindowStaysOnTopHint
 
-   //exit button
-   SystemPalette
-   {
-       id: pallete
-   }
+    //exit button
+    SystemPalette
+    {
+        id: pallete
+    }
 
-   ExitButtonMy
-   {
-       id : myExitButton
-       width: parent.width / 12
-       height: parent.height /16
-       anchors.right: parent.right
+    ExitButtonMy
+    {
+        id : myExitButton
+        width: parent.width / 12
+        height: parent.height /16
+        anchors.right: parent.right
         anchors.rightMargin:4
-       anchors.top: parent.top
+        anchors.top: parent.top
         anchors.topMargin: 0
-   }
-   //minimize button
-   MinimizeButtonMy
-   {
-       id : myMimizeButton
-       width: parent.width / 12
-       height: parent.height /16
-       anchors.right: myExitButton.left
+    }
+    //minimize button
+    MinimizeButtonMy
+    {
+        id : myMimizeButton
+        width: parent.width / 12
+        height: parent.height /16
+        anchors.right: myExitButton.left
         anchors.rightMargin: 2
-       anchors.top: parent.top
+        anchors.top: parent.top
         anchors.topMargin: 0
-   }
-   //rectangle for actual color pallete
+    }
+    //rectangle for actual color pallete
     Rectangle
     {
         color : "#95a5a6"
@@ -63,7 +63,7 @@ ApplicationWindow {
             columnSpacing: 6
             rowSpacing: 6
 
-            ColorButtonMy {width: 80; height: 60; ccolor: "white"}
+            ColorButtonMy {width: 80; height: 60; ccolor: "white";}
 
 
 

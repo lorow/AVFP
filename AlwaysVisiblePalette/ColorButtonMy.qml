@@ -2,6 +2,7 @@ import QtQuick 2.0
 
 
 
+
 Rectangle {
     id: rec
     property string ccolor
@@ -15,9 +16,8 @@ Rectangle {
         anchors.fill: parent
         onClicked:
         {
-
             console.log("Button clicked!")
-           clipboardHandlerMy.textclipboard("test")
+            toClipBoardByMe.putItInClipboard()
         }
     }
 }

@@ -2,7 +2,7 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QQuickView>
-#include "clipboardhandlermy.h"
+#include "toclipboardbyme.h"
 #include <QObject>
 
 
@@ -11,9 +11,9 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
     QQmlApplicationEngine engine;
 
-    clipboardHandlerMy clipMy;
+   toClipBoardByMe tcbbm;
 
-       engine.rootContext()->setContextProperty("clipboardHandlerMy", &clipMy);
+    engine.rootContext()->setContextProperty("toClipBoardByMe", &tcbbm);
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
     return app.exec();
