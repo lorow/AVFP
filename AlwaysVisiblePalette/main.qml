@@ -63,7 +63,10 @@ ApplicationWindow {
             columnSpacing: 6
             rowSpacing: 6
 
-            ColorButtonMy {width: 80; height: 60; ccolor: "white";}
+            ColorButtonMy {width: 80; height: 60; ccolor: "white"; textdata: "test222"}
+            ColorButtonMy {width: 80; height: 60; ccolor: "green"; textdata: "green"}
+            ColorButtonMy {width: 80; height: 60; ccolor: "red"; textdata: "red"}
+            ColorButtonMy {width: 80; height: 60; ccolor: "black"; textdata: "black"}
 
 
 

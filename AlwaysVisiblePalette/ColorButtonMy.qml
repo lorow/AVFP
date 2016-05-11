@@ -4,6 +4,7 @@ import QtQuick 2.0
 
 
 Rectangle {
+    property var textdata
     id: rec
     property string ccolor
     width: 20
@@ -16,8 +17,9 @@ Rectangle {
         anchors.fill: parent
         onClicked:
         {
+            var textdata = rec.textdata
             console.log("Button clicked!")
-            toClipBoardByMe.putItInClipboard()
+            toClipBoardByMe.putItInClipboard(textdata)
         }
     }
 }
